@@ -6,3 +6,7 @@ default/files
 
 # Ignore .DS_Store - commonly found on Macs
 .DS_Store
+
+# Ignore Sass & Compass config files
+.sass-cache
+config.rb

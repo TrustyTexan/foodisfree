@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+
+  <!-- For development only, remove this on production -->
+  <link href="sites/all/themes/foodisfree/css/foodisfree.css" rel="stylesheet" type="text/css">
+  <!-- *** -->
+  
   <?php print $scripts; ?>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
