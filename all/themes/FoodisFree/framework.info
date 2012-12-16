@@ -1,4 +1,4 @@
-name = FoodisFree
+name = foodisfree
 description = FoodisFree is a custom theme for The Food is Free Project.  It is based off the Framework theme.
 core = 7.x
 engine = phptemplate
