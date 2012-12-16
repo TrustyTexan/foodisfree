@@ -1,0 +1,16 @@
+name = Photos
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = photos
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = image
+dependencies[] = node
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[field][] = node-photo-field_image
+features[node][] = photo
+features[views_view][] = photos

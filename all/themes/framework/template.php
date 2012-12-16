@@ -29,6 +29,13 @@ function framework_breadcrumb($variables) {
   }
 }
 
+function framework_preprocess_html(&$variables) {
+  $options = array(
+    'group' => JS_THEME,
+  );
+  drupal_add_js(drupal_get_path('theme', 'framework'). '/js/jquery.ulslide.js', $options);
+}
+
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
