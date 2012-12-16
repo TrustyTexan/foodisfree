@@ -3,3 +3,6 @@ default/settings.php
 
 # Ignore paths that contain user-generated content.
 default/files
+
+# Ignore .DS_Store - commonly found on Macs
+.DS_Store
