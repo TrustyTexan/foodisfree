@@ -13,7 +13,7 @@
  * pathnames to configuration directories. These aliases are loaded prior to
  * scanning for directories, and they are exempt from the normal discovery
  * rules. The aliases are defined in an associative array named $sites, which
- * should look similar to the following: 
+ * should look similar to the following:
  *
  * $sites = array(
  *   'devexample.com' => 'example.com',
