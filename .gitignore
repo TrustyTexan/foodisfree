@@ -10,3 +10,6 @@ default/files
 # Ignore Sass & Compass config files
 .sass-cache
 config.rb
+
+# Ignore Eclipse project files
+.project
