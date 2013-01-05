@@ -1,0 +1,4 @@
+name = foodisfree Blocks
+description = Static blocks
+package = foodisfree
+core = 7.x
