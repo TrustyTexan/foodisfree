@@ -4,6 +4,13 @@
  * Implementation of hook_block()
  */
 
+function foodisfree_blocks_block_info(){
+  $blocks['foodisfree_blocks'] = array(
+    'info' => t('Food is Free Blocks')
+  );
+  return $blocks;
+}
+
 function foodisfree_blocks_block($op='list', $delta=0, $edit=array()) {
   switch ($op) {
     case 'list':
