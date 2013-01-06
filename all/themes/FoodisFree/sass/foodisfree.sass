@@ -17,16 +17,33 @@
 	font-weight: normal
 	font-style: normal
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic)
 
 body
-	background: url(../images/background.png)
+	margin: 0
+	background: url(../images/bg-wood.jpg)
+	font-family: "Junction", "helvetica neue", helvetica, arial, sans-serif
+
+iframe body
+	background: #fff !important
 
 a
 	color: #28600f
 
-#container
+#top-bg
+	background: url(../images/bg-cloth.png)
+
+#bottom-bg
+	background: url(../images/torn-edge.png) repeat-x 0 0
+
+#top-container
 	width: 940px
-	padding: 10px
+	padding: 10px 10px 60px 10px
+	margin: 0 auto
+
+#bottom-container
+	width: 940px
+	padding: 50px 10px 10px 10px
 	margin: 0 auto
 
 #header
@@ -43,6 +60,10 @@ a
 	z-index: 10
 
 .view-photos
+	margin-bottom: 15px
+	position: relative
+	overflow: visible
+
 	.slide-node
 		padding: 7px !important
 		img
@@ -74,6 +95,9 @@ a
 			position: relative
 			left: -35px
 
+.block-title
+	font-family: "Junction"
+
 
 #block-block-1
 	background: url(../images/bg-bluebox.jpg) no-repeat
@@ -81,11 +105,59 @@ a
 	width: 293px
 	height: 328px
 
+	.block-title
+		text-align: center
+		font-size: 40px
+		color: #041117
+		margin: 20px 0 0 0
+		padding-top: 10px
+
+	ul
+		padding: 0 0 0 35px
+
+	li
+		font-family: lato
+		font-weight: 300
+		background: url(../images/bg-marker.png) no-repeat 0 50%
+		padding-left: 15px
+		font-size: 20px
+		line-height: 54px
+		list-style: none
+
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: #5aff11
+
 #block-block-2
 	background: url(../images/bg-greenbox.jpg) no-repeat
 	float: left
 	width: 293px
 	height: 328px
+	.block-title
+		text-align: center
+		font-size: 40px
+		color: #08160b
+		margin: 20px 0 0 0
+		padding-top: 10px
+
+	ul
+		padding-left: 15px
+		width: 250px
+
+	li
+		list-style: none
+		background: url(../images/bullet-asterisk.png) no-repeat 0 4px
+		padding-left: 25px
+		margin: 15px 0
+		font-family: lato
+		font-weight: 400
+		font-size: 15px
+		line-height: 22px
+
+		a
+			color: #fff
 
 #block-block-3 
 	text-align: center
@@ -93,6 +165,7 @@ a
 	font-size: 22px
 	line-height: 34px
 	color: #3d3930
+	margin: 10px 0
 
 	h1
 		font-family: "Journal"
@@ -107,3 +180,103 @@ a
 	width: 323px
 	height: 328px
 	margin: 0 15px
+	.block-title
+		text-align: center
+		font-size: 40px
+		color: #ff9c00
+		margin: 20px 0 0 0
+		padding-top: 10px
+
+#block-views-video-list-block-1
+	.views-field-title
+		font-size: 34px
+		text-align: center
+		font-family: "Journal"
+		font-weight: normal
+		color: #f3ecde
+
+	.views-row
+		float: left
+		.views-field-field-youtube-embed-code iframe
+			box-shadow: 0 0 5px rgba(0,0,0,.5)
+	.views-row-1
+		margin-right: 20px
+
+#footer
+	clear: both
+	padding-top: 60px
+
+	.copy-info, #credit
+		clear: both
+		width: 450px
+		margin: 20px auto
+		line-height: 20px
+		text-align: center
+		font-size: 15px
+
+	.copy-info
+		margin-top: 105px
+		text-shadow: 0 1px 1px rgba(0,0,0,.75)
+		color: #a38868
+
+	#credit a
+		color: #8dcf46
+
+.not-front
+	#main
+		width: 600px
+		float: left
+		line-height: 25px
+
+#sidebar
+	float: right
+	width: 300px
+	margin: 0 0 40px 40px
+
+#block-block-4
+	float: right
+	width: 265px
+
+	.block-title
+		font-size: 14px
+		float: left
+		color: #a38868
+		padding-top: 7px
+		margin-right: 10px
+
+	ul
+		padding: 0
+
+	li
+		float: left
+		list-style: none
+		text-indent: -9999px
+		margin: 0 5px
+
+		a
+			background: url(../images/social-media-icons.png) no-repeat
+			width: 21px
+			height: 20px
+			display: block
+
+	#twitter a
+		background-position: -30px 0
+	#facebook a
+		background-position: -60px 0
+
+#block-system-main-menu
+	float: left
+	width: 600px
+	font-size: 14px
+
+	li
+		list-style: none
+		float: left
+
+		a
+			color: #ff9442
+
+	ul
+		padding: 2px 0 0 100px
+		background: url(../images/carrot.png) no-repeat 0 0
+		overflow: hidden
