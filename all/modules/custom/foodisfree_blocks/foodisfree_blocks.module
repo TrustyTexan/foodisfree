@@ -16,8 +16,6 @@ function foodisfree_blocks_block($op='list', $delta=0, $edit=array()) {
     case 'list':
       $blocks['donate']['info'] = t('Donate');
       $blocks['donate']['cache'] = BLOCK_NO_CACHE;
-
-
       return $blocks;
     case 'view':
       switch($delta) {

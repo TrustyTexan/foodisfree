@@ -28,12 +28,15 @@ function photos_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['style_options']['class'] = 'photo';
   $handler->display->display_options['style_options']['wrapper_class'] = 'photo-slider';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Header: Global: PHP */
   $handler->display->display_options['header']['php']['id'] = 'php';
   $handler->display->display_options['header']['php']['table'] = 'views';
@@ -42,11 +45,11 @@ function photos_views_default_views() {
         var jSlider = jQuery.noConflict();
         jSlider(document).ready(function(){
           jSlider(\'.photo\').ulslide({
-            width: 293,
+            width: 138,
             duration: 400,
             effect: {
               showCount: 6,
-              type: \'carousel\'//,
+              type: \'carousel\'
             },
             nextButton: \'#slide-next\',
             prevButton: \'#slide-prev\'
