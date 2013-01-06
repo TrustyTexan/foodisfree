@@ -1,42 +1,48 @@
 <?php
-
 /**
- * Implementation of hook_block()
+ * Implements hook_block_info().
  */
-
-function foodisfree_blocks_block_info(){
-  $blocks['foodisfree_blocks'] = array(
-    'info' => t('Food is Free Blocks')
+function foodisfree_blocks_block_info() {
+  $blocks['donate'] = array(
+    'info' => t('Donate'),
+    'status' => TRUE,
+    'region' => 'content',
+    'weight' => 0,
+    'visibility' => 0,
+    'pages' => 'admin*
+coder*
+node/add*
+node/*/edit
+node/*/devel
+',
   );
+
   return $blocks;
 }
+  
+/**
+  * Implements hook_block_view().
+  */
+function foodisfree_blocks_block_view($delta='') {
+  $block = array();
 
-function foodisfree_blocks_block($op='list', $delta=0, $edit=array()) {
-  switch ($op) {
-    case 'list':
-      $blocks['donate']['info'] = t('Donate');
-      $blocks['donate']['cache'] = BLOCK_NO_CACHE;
-      return $blocks;
-    case 'view':
-      switch($delta) {
+  switch ($delta) {
     case 'donate':
-      $block['content'] = theme('donate', menu_get_object('node'));
-    break;
-
-      }
-      return $block;
-    case 'configure':
-
-    case 'save':
-
+      $block['subject'] = t('Donate');
+      $block['content'] = donate_contents();
+      break;
   }
+  
+  return $block;
 }
 
-function foodisfree_blocks_theme($existing, $type, $theme, $path) {
-  return array(
-    'donate' => array(
-      'arguments' => array('node' => null),
-      'template' => 'block-donate',
-    ),
-  );
+/**
+ * custom html block
+ * @return string
+ */
+function donate_contents() {
+  return '
+   <h1>Donate!</h1>
+  ';
 }
+?>

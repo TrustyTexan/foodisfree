@@ -1,10 +1,101 @@
+@font-face {
+  font-family: "Journal";
+  src: url("../fonts/journal/journal-webfont.eot");
+  src: url("../fonts/journal/journal-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/journal/journal-webfont.woff") format("woff");
+  src: url("../fonts/journal/journal-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Junction";
+  src: url("Junction-webfont.eot");
+  src: url("Junction-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("Junction-webfont.woff") format("woff");
+  src: url("Junction-webfont.ttf") format("truetype");
+  src: url("Junction-webfont.svg#junctionregularRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background: url(../images/background.png); }
 
+a {
+  color: #28600f; }
+
 #container {
-  width: 960px;
+  width: 940px;
   padding: 10px;
   margin: 0 auto; }
 
+#header {
+  width: 940px; }
+
+#logo {
+  position: relative;
+  left: -10px; }
+
 #ulslide-1 {
-  width: 100%; }
+  width: 940px !important;
+  height: 118px !important;
+  position: relative;
+  z-index: 10; }
+
+.view-photos .slide-node {
+  padding: 7px !important; }
+  .view-photos .slide-node img {
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: block; }
+.view-photos .view-footer {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  height: 23px;
+  z-index: 5; }
+  .view-photos .view-footer a {
+    background: url(../images/nav-arrows.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 23px;
+    height: 23px; }
+  .view-photos .view-footer #slide-prev {
+    position: relative;
+    left: 35px;
+    float: right;
+    background-position: -23px 0; }
+  .view-photos .view-footer #slide-next {
+    position: relative;
+    left: -35px; }
+
+#block-block-1 {
+  background: url(../images/bg-bluebox.jpg) no-repeat;
+  float: left;
+  width: 293px;
+  height: 328px; }
+
+#block-block-2 {
+  background: url(../images/bg-greenbox.jpg) no-repeat;
+  float: left;
+  width: 293px;
+  height: 328px; }
+
+#block-block-3 {
+  text-align: center;
+  font-family: "Junction";
+  font-size: 22px;
+  line-height: 34px;
+  color: #3d3930; }
+  #block-block-3 h1 {
+    font-family: "Journal";
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 43px;
+    margin: 0; }
+
+#block-foodisfree-blocks-donate {
+  background: url(../images/bg-brownbox.jpg) no-repeat;
+  float: left;
+  width: 323px;
+  height: 328px;
+  margin: 0 15px; }
