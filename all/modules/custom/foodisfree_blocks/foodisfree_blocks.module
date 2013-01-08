@@ -42,7 +42,16 @@ function foodisfree_blocks_block_view($delta='') {
  */
 function donate_contents() {
   return '
-   <h1>Donate!</h1>
+    <div class="message">We\'re a non-profit, so any donation you make would be awesome!</div>
+    <div class="form">
+      <div class="input">$ <input type="textbox"/></div>
+      <div class="nextButton"><span>NEXT</span><span class="icon"></span></div>
+    </div>
+    <div class="message-bottom">
+      <div class="heading">No money? No worries!</div>
+      We\'ll also take compost, soil, and other materials.
+      <a href="#">Let us know what you\'ve got<a>
+    <div>
   ';
 }
 ?>
