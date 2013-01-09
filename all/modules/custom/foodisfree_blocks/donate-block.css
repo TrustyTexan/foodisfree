@@ -1,0 +1,85 @@
+#block-foodisfree-blocks-donate .message {
+  text-align: center;
+  padding: 20px 21px 0;
+  font-size: 15px;
+  color: white;
+}
+#block-foodisfree-blocks-donate .form {
+  padding-top: 15px;
+  overflow: hidden;
+}
+#block-foodisfree-blocks-donate table {
+  border-spacing: 0;
+  border-collapse: separate; /*for ie*/
+  margin: auto;
+}
+#block-foodisfree-blocks-donate tbody {
+  border: none;
+}
+#block-foodisfree-blocks-donate table td {
+  padding: 0;
+}
+#block-foodisfree-blocks-donate .input {
+  font-size: 35px;
+  color: #FF9C00;
+  padding-right: 12px;
+}
+#block-foodisfree-blocks-donate input {
+  width: 100px;
+  margin: 0 0 3px 5px;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 23px;
+  color: white;
+  border: 1px solid #655848;
+  background-color: #312517;
+  font-family: Junction;
+  vertical-align: middle;
+}
+#block-foodisfree-blocks-donate .nextButton {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 2px 14px 0;
+  border-radius: 5px;
+  background-color: #26672F;
+  background: -webkit-linear-gradient(top, #317D3D, #225D2D);
+  background: -moz-linear-gradient(top, #317D3D, #225D2D);
+  height: 45px;
+  width: 96px;
+  box-shadow: 0 2px 5px #1B1310;
+  cursor: pointer;
+}
+#block-foodisfree-blocks-donate .nextButton > span {
+  vertical-align: middle;
+}
+
+/*#block-foodisfree-blocks-donate .nextButton > span {
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 9px;
+}*/
+
+#block-foodisfree-blocks-donate .nextButton .icon {
+  
+}
+
+#block-foodisfree-blocks-donate .message-bottom {
+  padding-top: 9px;
+  text-align: center;
+  color: #D7B68D;
+  font-size: 15px;
+}
+
+#block-foodisfree-blocks-donate .message-bottom .heading {
+  font-size: 25px;
+}
+
+#block-foodisfree-blocks-donate .message-bottom .content {
+/*  background: url(../../../themes/FoodisFree/images/bg-marker.png);
+  margin: 0 12px;*/
+}
+
+#block-foodisfree-blocks-donate a {
+  color: #D7B68D;
+}

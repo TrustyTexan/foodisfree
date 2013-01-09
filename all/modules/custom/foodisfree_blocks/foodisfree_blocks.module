@@ -1,4 +1,11 @@
 <?php
+
+function foodisfree_blocks_init() {
+  if (drupal_is_front_page()) {
+    drupal_add_css(drupal_get_path('module', 'foodisfree_blocks') . '/donate-block.css');
+  }
+}
+
 /**
  * Implements hook_block_info().
  */
@@ -44,13 +51,19 @@ function donate_contents() {
   return '
     <div class="message">We\'re a non-profit, so any donation you make would be awesome!</div>
     <div class="form">
-      <div class="input">$ <input type="textbox"/></div>
-      <div class="nextButton"><span>NEXT</span><span class="icon"></span></div>
+      <table>
+        <tr>
+          <td class="input"><span>$</span><input type="textbox"/></td>
+          <td><div class="nextButton"><span>NEXT</span><span class="icon"></span></div></td>
+        </tr>
+      </table>
     </div>
     <div class="message-bottom">
       <div class="heading">No money? No worries!</div>
-      We\'ll also take compost, soil, and other materials.
-      <a href="#">Let us know what you\'ve got<a>
+      <div class="content">
+        We\'ll also take compost, soil, and other materials.
+        <a href="#">Let us know what you\'ve got.<a>
+      </div>
     <div>
   ';
 }
