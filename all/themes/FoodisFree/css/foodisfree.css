@@ -165,59 +165,6 @@ a {
   width: 323px;
   height: 328px;
   margin: 0 15px; }
-
-#block-foodisfree-blocks-donate .message {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 14px;
-  color: white;
-}
-#block-foodisfree-blocks-donate .form {
-  padding: 20px 22px 0;
-  overflow: hidden;
-}
-#block-foodisfree-blocks-donate .input {
-  float: left;
-}
-#block-foodisfree-blocks-donate input {
-  width: 120px;
-
-}
-#block-foodisfree-blocks-donate .nextButton {
-  float: right;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  padding: 0 14px;
-  border-radius: 5px;
-  background: -webkit-linear-gradient(top, #317D3D, #225D2D);
-  height: 45px;
-  width: 96px;
-  display: table;
-}
-#block-foodisfree-blocks-donate .nextButton > span {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#block-foodisfree-blocks-donate .nextButton .icon {
-  
-}
-
-#block-foodisfree-blocks-donate .message-bottom {
-  padding-top: 23px;
-
-}
-
-#block-foodisfree-blocks-donate .message-bottom .heading {
-  font-size: 20px;
-  padding-bottom: 3px;
-}
-
-#block-foodisfree-blocks-donate a {
-
-}
-
   #block-foodisfree-blocks-donate .block-title {
     text-align: center;
     font-size: 40px;
