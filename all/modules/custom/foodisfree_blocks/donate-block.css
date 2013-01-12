@@ -50,8 +50,16 @@
   box-shadow: 0 2px 5px #1B1310;
   cursor: pointer;
 }
+.ie9 #block-foodisfree-blocks-donate .nextButton {
+  /*height: 39px;*/
+  margin-bottom: 4px;
+}
 #block-foodisfree-blocks-donate .nextButton > span {
   vertical-align: middle;
+}
+.ie9 #block-foodisfree-blocks-donate .nextButton > span {
+  position: relative;
+  top: 7px;
 }
 
 /*#block-foodisfree-blocks-donate .nextButton > span {
