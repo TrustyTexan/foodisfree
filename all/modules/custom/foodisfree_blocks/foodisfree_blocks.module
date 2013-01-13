@@ -59,7 +59,7 @@ function donate_contents() {
         <table>
           <tr>
             <td class="input"><span>$</span><input name="amount" type="textbox"/></td>
-            <td><div class="nextButton"><span>NEXT</span><span class="icon"></span></div></td>
+            <td><div class="nextButton"><a href="#">NEXT</a><span class="icon"></span></div></td>
           </tr>
         </table>
       </form>
