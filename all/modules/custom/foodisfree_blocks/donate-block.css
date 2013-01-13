@@ -3,6 +3,7 @@
   padding: 20px 21px 0;
   font-size: 15px;
   color: white;
+  line-height: 22px;
 }
 
 #block-foodisfree-blocks-donate .form {
@@ -75,6 +76,7 @@
 
 #block-foodisfree-blocks-donate .message-bottom .heading {
   font-size: 25px;
+  margin: 10px 0 8px 0;
 }
 
 #block-foodisfree-blocks-donate .message-bottom .content {
