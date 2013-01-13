@@ -25,6 +25,12 @@ iframe body
 a
 	color: #28600f
 
+h1
+	font-family: "Journal"
+	font-size: 60px
+	font-weight: normal
+	color: #3d3930
+
 #top-bg
 	background: url(../images/bg-cloth.png)
 
@@ -92,6 +98,7 @@ a
 
 .block-title
 	font-family: "Junction"
+	font-weight: normal
 
 
 #block-block-1
@@ -130,6 +137,7 @@ a
 	float: left
 	width: 293px
 	height: 328px
+
 	.block-title
 		text-align: center
 		font-size: 40px
@@ -294,14 +302,14 @@ a
 		font-size: 32px
 		background: url(../images/sketch-arrow.png) no-repeat 100% 50%
 		float: left
-		width: 495px
+		width: 450px
 
 	input
 		float: left
 
 	.form-text
 		background: #1c150e
-		width: 280px
+		width: 320px
 		border: 1px solid #494037
 		padding: 6px 12px
 		color: #11affa
@@ -311,22 +319,59 @@ a
 		border-radius: 4px
 		margin: 17px 8px 0 0
 
-	.form-submit, .submit
-		font-family: "Lato"
-		font-weight: 900
-		font-size: 19px
-		text-transform: uppercase
-		color: #fff
-		background: #31803e
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxODAzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI1NjczMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDVmMmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
-		background: -moz-linear-gradient(top,  #31803e 0%, #256730 50%, #245f2e 100%)
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31803e), color-stop(50%,#256730), color-stop(100%,#245f2e))
-		background: -webkit-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
-		background: -o-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
-		background: -ms-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
-		background: linear-gradient(to bottom,  #31803e 0%,#256730 50%,#245f2e 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31803e', endColorstr='#245f2e',GradientType=0 )
-		border: none
-		border-radius: 4px
-		box-shadow: 0 2px 2px rgba(0,0,0,.5)
-		padding: 6px 13px
+	.submit
+		position: relative
+		top: -4px
+
+.form-submit, .submit
+	font-family: "Lato"
+	font-weight: 900
+	font-size: 19px
+	text-transform: uppercase
+	color: #fff
+	background: #31803e
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxODAzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI1NjczMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDVmMmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+	background: -moz-linear-gradient(top,  #31803e 0%, #256730 50%, #245f2e 100%)
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31803e), color-stop(50%,#256730), color-stop(100%,#245f2e))
+	background: -webkit-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
+	background: -o-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
+	background: -ms-linear-gradient(top,  #31803e 0%,#256730 50%,#245f2e 100%)
+	background: linear-gradient(to bottom,  #31803e 0%,#256730 50%,#245f2e 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31803e', endColorstr='#245f2e',GradientType=0 )
+	border: none
+	border-radius: 4px
+	box-shadow: 0 2px 2px rgba(0,0,0,.5)
+	padding: 6px 13px
+
+
+#sidebar
+	#main-menu
+		margin: 127px 0 0 
+		padding: 0
+		li
+			list-style: none
+
+		li.active a
+			color: #fff
+
+		a
+			background: url(../images/bg-wood.jpg)
+			padding: 15px
+			display: block
+			margin: 0 0 15px 0
+			color: #ff9442
+			text-decoration: none
+			border-radius: 3px
+			box-shadow: 0 1px 2px rgba(0,0,0,.75)
+
+			&:hover
+				color: #fff
+
+		li:first-child a
+			background-position: 75% 20%
+
+		li:last-child a
+			background-position: -75% 0
+
+		li:nth-child(3) a
+			background-position: 50% -20%

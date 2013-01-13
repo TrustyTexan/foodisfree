@@ -10,8 +10,20 @@
       <?php print render($page['header']); ?>
     </header> <!-- /#header -->
 
-    <?php if (($page['sidebar']) && (!$is_front)): ?>
+    <?php if (!$is_front): ?>
       <aside id="sidebar">
+        <?php print theme('links__system_main_menu', array(
+            'links' => $main_menu,
+            'attributes' => array(
+              'id' => 'main-menu',
+              'class' => array('links', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
         <?php print render($page['sidebar']); ?>
       </aside>
     <?php endif; ?>
