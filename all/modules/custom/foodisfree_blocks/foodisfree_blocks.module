@@ -68,7 +68,7 @@ function donate_contents() {
       <div class="heading">No money? No worries!</div>
       <div class="content">
         We\'ll also take compost, soil, and other materials.
-        <a href="/contact-us">Let us know what you\'ve got.</a>
+        <a href="contact-us">Let us know what you\'ve got.</a>
       </div>
     <div>
   ';
