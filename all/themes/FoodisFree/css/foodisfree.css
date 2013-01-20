@@ -333,3 +333,51 @@ h1 {
     background-position: -75% 0; }
   #sidebar #main-menu li:nth-child(3) a {
     background-position: 50% -20%; }
+
+
+/*************************** NEEDS SOME SASSY!!! ********************************/
+/* PAGER */
+.item-list .pager li {
+  font-family: Arial;
+  margin-left: 0;
+  padding: 3px 5px;
+}
+.item-list .pager li + li {
+  margin-left: 10px;
+}
+.item-list .pager li:not(.pager-current):hover {
+  background-color: #28600f;
+}
+.item-list .pager li:hover a {
+  color: white;
+}
+.item-list .pager li a {
+  text-decoration: none;
+}
+
+/* BLOG VIEW PAGE */
+.view-blog .views-row + .views-row {
+  padding-top: 35px
+}
+
+/* FACEBOOK SIDE BAR */
+#block-block-6 {
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  background-color: white;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 298px;
+  height: 537px;
+}
+#block-block-6 iframe {
+  top: -1px;
+  left: -1px;
+  position: relative;
+}
+
+/* CONTACT US FORM */
+.webform-client-form label {
+  display: block;
+  color: #3d3930;
+}
