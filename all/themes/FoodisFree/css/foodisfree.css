@@ -16,7 +16,9 @@
 body {
   margin: 0;
   background: url(../images/bg-wood.jpg);
-  font-family: "Junction", "helvetica neue", helvetica, arial, sans-serif; }
+  font-family: "Junction", "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 15px;
+  color: #3d3930; }
 
 iframe body {
   background: white !important; }
@@ -212,7 +214,8 @@ h1 {
 #sidebar {
   float: right;
   width: 300px;
-  margin: 0 0 40px 40px; }
+  margin: 0 0 40px 40px;
+  font-size: 16px; }
 
 #block-block-4 {
   float: right;
