@@ -24,7 +24,5 @@
         nextButton.onclick = function(e) {
             if (validateFormat(amountInput.value)) form.submit();
         };
-
-        amountInput.focus();
     });
 })(jQuery);
